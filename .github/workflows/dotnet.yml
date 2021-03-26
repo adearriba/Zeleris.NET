@@ -24,8 +24,8 @@ jobs:
     - name: Copy files
       uses: canastro/copy-action@0.0.2
       with:
-        source: /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/XmlExamples/
-        target: /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/XmlExamples/
+        source: /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/bin/Debug/net5.0/XmlExamples/
+        target: /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/bin/Debug/net5.0/XmlExamples/
     - name: Test
       env: 
         ZelerisClientId: ${{ secrets.ZELERISAPIPASSWORD }}
