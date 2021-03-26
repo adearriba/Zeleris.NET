@@ -17,6 +17,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+    - name: Copy files
+      uses: canastro/copy-action@0.0.2
+      with:
+        source: Zeleris.NET/NZeleris.UnitTests/XmlExamples/
+        target: Zeleris.NET/NZeleris.UnitTests/XmlExamples/
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
