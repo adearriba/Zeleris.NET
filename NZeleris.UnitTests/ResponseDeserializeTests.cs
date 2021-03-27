@@ -23,7 +23,7 @@ namespace NZeleris.Tests
         [TestMethod]
         public void Deserialize_Tracking_Result()
         {
-            var response = File.ReadAllText($"{_settings.XMLTestDirectory}\\TrackingResult.xml");
+            var response = File.ReadAllText($"{_settings.XMLTestDirectory}/TrackingResult.xml");
             var result = _deserializer.Deserialize<DocumentTrackingResponse>(response);
 
             Assert.AreEqual("0", result.Result.Code);

@@ -22,7 +22,7 @@ namespace NZeleris.Tests
         [TestMethod]
         public void DocumentInformationResponse_from_XML()
         {
-            var response = File.ReadAllText($"{_settings.XMLTestDirectory}\\ZelerisDocumentInformationResponse.xml");
+            var response = File.ReadAllText($"{_settings.XMLTestDirectory}/ZelerisDocumentInformationResponse.xml");
             var result = _deserializer.Deserialize<DocumentInformationResponse>(response);
 
             Assert.IsTrue(result.IsSuccessful);
