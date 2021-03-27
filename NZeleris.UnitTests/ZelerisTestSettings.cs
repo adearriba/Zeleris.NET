@@ -15,7 +15,7 @@ namespace NZeleris.Tests
 
         private ZelerisTestSettings()
         {
-            XMLTestDirectory = $"{Directory.GetCurrentDirectory()}\\XmlExamples";
+            XMLTestDirectory = $"{Directory.GetCurrentDirectory()}/XmlExamples";
             ClientId = GetEnvironmentVariable("ZelerisClientId");
             APIUser = GetEnvironmentVariable("ZelerisAPIUser");
             APIPassword = GetEnvironmentVariable("ZelerisAPIPassword");
