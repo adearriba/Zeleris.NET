@@ -23,7 +23,7 @@ jobs:
       run: dotnet build --no-restore
     - name: List Files
       run: |
-        cd /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/bin/Debug/net5.0/
+        cd /home/runner/work/Zeleris.NET/Zeleris.NET/NZeleris.UnitTests/bin/Debug/net5.0/XmlExamples
         ls -a
     - name: Test
       env: 
